@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb92bae7-72e8-43e1-bbd6-a69de1161d7b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/60DayProject/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/60DayProject/60DayProject.iml" afterPath="$PROJECT_DIR$/60DayProject/60DayProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eb92bae7-72e8-43e1-bbd6-a69de1161d7b" name="Default" comment="" />
     <ignored path="60DayProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
