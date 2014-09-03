@@ -27,12 +27,12 @@ Given a list of products separate those products into as few boxes as possible g
 
 tisha[1:45 PM]Each box has 9 units
 
-tisha[1:46 PM]All shoes are 3 Units
-tisha[1:46 PM]Call clothes are 2 units
-tisha[1:46 PM]All bags are 3 units
-tisha [1:46 PM]All houswares (towels and such) are 5 units
-tisha[1:47 PM]Beauty items are 2 units
-tisha[1:47 PM]Accessories are 1 unit
+All shoes are 3 Units
+All clothes are 2 units
+All bags are 3 units
+All houswares (towels and such) are 5 units
+Beauty items are 2 units
+Accessories are 1 unit
 
 
 JSON format:
