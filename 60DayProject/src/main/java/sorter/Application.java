@@ -1,4 +1,4 @@
-package stuff;
+package main.java.sorter;
 
 public class Application
 {
