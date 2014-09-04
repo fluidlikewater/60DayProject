@@ -1,4 +1,4 @@
-package main.java.sorter;
+package sorter;
 
 public class WebController {
 }

@@ -1,0 +1,29 @@
+{
+   "items": [
+       {
+           "name": "Cool Shoes",
+           "itemType": "shoe",
+           "sku": "12345678"
+       },
+       {
+           "name": "Cool Heels",
+           "itemType": "shoe",
+           "sku": "12345678"
+       },
+       {
+           "name": "Cool Heels",
+           "itemType": "shoe",
+           "sku": "12345678"
+       },
+       {
+           "name": "Cool Accessory",
+           "itemType": "accessory",
+           "sku": "23456789"
+       },
+       {
+           "name": "Cool Blender",
+           "itemType": "housewares",
+           "sku": "987765432"
+       }
+   ]
+}

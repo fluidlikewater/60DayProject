@@ -1,9 +1,14 @@
-package main.java.sorter;
+package sorter;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Application
 {
 	public static void main ( String[] args )
 	{
-		System.out.println( "Hello" );
+		Product.generateProduct();
+
+        ObjectMapper mapper = new ObjectMapper();
+
 	}
 }
