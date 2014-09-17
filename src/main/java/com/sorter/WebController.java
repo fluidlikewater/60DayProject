@@ -1,5 +1,6 @@
 package com.sorter;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,9 +21,14 @@ public class WebController {
 
         ArrayList<Product> items = new ArrayList<Product>(Order.order(itemCount));
         for (int i = 0; i < items.size(); i++ ) {
-            model.addAttribute("orderItems", items.get(i));
-            System.out.println(items.get(i));
+            model.addAttribute("itemName", items.get(i).getName());
+            model.addAttribute("itemType", items.get(i).getProductType());
         }
+        JSONObject json = new JSONObject();
+        JSONArray ja = Order.jsonOrder(itemCount);
+        //json.put( ja );
+
+        model.addAttribute("json", ja);
 
         return "order";
     }

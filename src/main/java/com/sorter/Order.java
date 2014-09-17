@@ -19,17 +19,18 @@ public class Order {
     }
 
     public static JSONArray jsonOrder(int items) {
-        JSONArray order = new JSONArray();
+        JSONObject order = new JSONObject();
+        JSONArray ja = new JSONArray();
         for (int i = 0; i <= items; i++) {
             JSONObject item = new JSONObject();
             Product p = GenerateProduct.generateProduct();
             item.put( "name", p.getName() );
             item.put( "type", p.getProductType() );
             item.put( "size", p.getSize());
-            order.put(p);
+            ja.put(item);
         }
-        System.out.println(order);
-        return order;
+        order.put( "order", ja );
+        return ja;
     }
 
 

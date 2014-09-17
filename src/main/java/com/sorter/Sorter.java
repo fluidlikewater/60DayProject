@@ -18,6 +18,8 @@ public class Sorter {
         //json();
         for ( int i = 0; i < orderItems.size(); i++ ) {
             boolean stowed = false;
+
+            // This is our first item make a new box and stow it.
             if ( boxes.size() == 0 ) {
                 boxes.add(Box.newBox(orderItems.get(i).getProductType()));
                 boxes.get(0).reduceBoxRoom(orderItems.get(i).getSize());
@@ -25,6 +27,7 @@ public class Sorter {
                 stowed = true;
             }
 
+            // Look for a box that has room that matches the item type if one is available then stow it.
             if ( stowed == false ) {
                 for (int j = 0; j < boxes.size(); j++) {
                     if (orderItems.get(i).getProductType() == boxes.get(j).getBoxType() && boxes.get(j).getBoxFull() == false) {
@@ -35,6 +38,7 @@ public class Sorter {
                 }
             }
 
+            // If no boxes exist create a new box and add the item to it.
             if ( stowed == false ) {
                 boxes.add(Box.newBox(orderItems.get(i).getProductType()));
                 boxes.get((boxes.size() - 1)).reduceBoxRoom(orderItems.get(i).getSize());
